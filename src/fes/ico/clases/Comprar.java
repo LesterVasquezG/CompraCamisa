@@ -1,4 +1,9 @@
 
+/* Autor: Vasquez Galvan Lester
+   Ultima fecha de actualizacion: 03 de marzo de 2020
+Objetivo: Esta clase realiza el calculo total a pagar en una compra de camisas y aplica un descuento de 
+5% en caso de comprar de 3 a 5 piezas y un 8% en caso de comprar mas de 5 piezas.
+*/
 package fes.ico.clases;
 
 import javax.swing.JOptionPane;
@@ -85,7 +90,7 @@ public class Comprar {
     
     
     
-    // metodo para hacer descuentos 
+    // metodo para hacer el calculo total y descuentos  
     public float calculos(int cantidadTotal, int cantidadCamisa1, int cantidadCamisa2, int cantidadCamisa3){
         this.cantidadTotal=cantidadTotal;
         this.cantidadCamisa1=cantidadCamisa1;
@@ -113,7 +118,7 @@ public class Comprar {
         return totalPago;
     }
     
-    //mteodo para imprimir el total a pagar
+    //metodo para imprimir el total a pagar
     public void mostrarResultados(){
         JOptionPane.showMessageDialog(null, "Total Neto: "+"$ "+this.totalNeto+"\nTotal de Articulos: "+this.cantidadTotal+"\nDescuento ("
                 +this.porcentajeDesc+"%):$ "+this.cantidadDescontada+"\nEl total a pagar es: "+"$ "+totalPago);

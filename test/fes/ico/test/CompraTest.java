@@ -1,8 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+/* Autor: Vasquez Galvan Lester
+   Ultima fecha de actualizacion: 03 de marzo de 2020
+Objetivo: Se realizan pruebas unitarias del metodo calcular de la clase Comprar.
+*/
 package fes.ico.test;
 
 import fes.ico.clases.Comprar;
@@ -45,6 +44,7 @@ public class CompraTest {
     public void testCalcular() {// Prueba de el metodo Calcular de la clase Comprar
         
          System.out.println("Comprobacion de el metodo Calcular de la clase Comprar");
+         
          
          int numCamisa1=3,numCamisa2=2,numCamisa3=4;
          int totalCamisas =numCamisa1+numCamisa2+numCamisa3;

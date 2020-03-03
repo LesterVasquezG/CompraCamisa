@@ -152,14 +152,20 @@ public class InterfaceUsuario extends javax.swing.JFrame {
         String cantidadCamisa2=this.jTextField2.getText();
         String cantidadCamisa3=this.jTextField3.getText();
         
+        //se convierte de string a entero para poder hacer operaciones
         int cantidadCamis1=Integer.parseInt(cantidadCamisa1);
         int cantidadCamis2=Integer.parseInt(cantidadCamisa2);
         int cantidadCamis3=Integer.parseInt(cantidadCamisa3);
         
         int suma=cantidadCamis1+cantidadCamis2+cantidadCamis3;
         
+        // se crea un objeto tipo compra
         Comprar compra1=new Comprar();
+        
+        //se llama el metodo calculos de la clase Comprar y se le proporcionan los argumentos requeridos
         compra1.calculos(suma,cantidadCamis1,cantidadCamis2,cantidadCamis3);
+        
+        //se llama al metodo mostrarResultados de la calse Comprar
         compra1.mostrarResultados();       
         
     }//GEN-LAST:event_jButton1MouseClicked
